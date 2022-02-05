@@ -1151,7 +1151,7 @@ export class SliderComponent implements OnInit, AfterViewInit, OnChanges, OnDest
       if (tick.selected && !ValueHelper.isNullOrUndefined(this.viewOptions.getSelectionBarColor)) {
         tick.style['background-color'] = this.getSelectionBarColor();
       }
-      if (!tick.selected && !ValueHelper.isNullOrUndefined(this.viewOptions.getTickColor)) {
+      if (!ValueHelper.isNullOrUndefined(this.viewOptions.getTickColor)) {
         tick.style['background-color'] = this.getTickColor(value);
       }
       if (!ValueHelper.isNullOrUndefined(this.viewOptions.ticksTooltip)) {
